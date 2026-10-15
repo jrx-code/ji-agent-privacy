@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Polityka prywatności: JI Agent (eu.iwanus.agent)</title>
+<style>
+ body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;max-width:760px;margin:2rem auto;padding:0 1rem;line-height:1.6;color:#1a1a1a}
+ h1{font-size:1.6rem} h2{font-size:1.15rem;margin-top:2rem} code{background:#f0f0f0;padding:.1rem .3rem;border-radius:4px}
+ .muted{color:#666;font-size:.9rem}
+</style>
+</head>
+<body>
+<h1>Polityka prywatności: JI Agent</h1>
+<p class="muted">Identyfikator aplikacji: <code>eu.iwanus.agent</code> · Ostatnia zmiana: 15 października 2026</p>
+
+<p>JI Agent to klient do prowadzenia spraw domowych (reklamacje, sprawy urzędowe, bankowe, mieszkaniowe). Wszystkie dane spraw leżą na <strong>własnym serwerze właściciela</strong> (oprogramowanie case-clerk). Aplikacja łączy się wyłącznie z serwerem, z którym została sparowana kodem z panelu tego serwera.</p>
+
+<h2>Jakie dane przetwarza aplikacja</h2>
+<ul>
+ <li><strong>Treść spraw</strong> pobierana z serwera właściciela: lista spraw, korespondencja, pisma, pliki, terminy. Aplikacja tylko je wyświetla; pliki otwierane w innej aplikacji są tymczasowo zapisywane w pamięci podręcznej telefonu.</li>
+ <li><strong>Pliki dodane przez użytkownika</strong> (skany, zdjęcia, PDF udostępnione do aplikacji lub zrobione aparatem) są wysyłane na serwer właściciela.</li>
+ <li><strong>Token urządzenia</strong> z parowania, przechowywany na telefonie w postaci zaszyfrowanej (Android Keystore).</li>
+</ul>
+<p>Dane nie trafiają do dewelopera ani do podmiotów trzecich. Połączenie z serwerem jest szyfrowane (HTTPS).</p>
+
+<h2>Powiadomienia</h2>
+<p>Gdy telefon jest sparowany, aplikacja co około 15 minut sprawdza na serwerze właściciela nowe propozycje i zbliżające się terminy i pokazuje lokalne powiadomienia. Nie używa usług push firm trzecich.</p>
+
+<h2>Tryb demo</h2>
+<p>Tryb demo pokazuje zmyślone, przykładowe sprawy wbudowane w aplikację i nie łączy się z żadnym serwerem.</p>
+
+<h2>Czego aplikacja nie robi</h2>
+<p>Brak reklam, analityki i śledzenia. Aplikacja nie korzysta z lokalizacji, kontaktów ani konta Google. Uprawnienie do aparatu służy tylko do zeskanowania kodu QR parowania; zdjęcia dokumentów robi systemowa aplikacja aparatu.</p>
+
+<h2>Usunięcie danych</h2>
+<p>„Rozparuj telefon” w Ustawieniach usuwa token z telefonu; odinstalowanie aplikacji usuwa wszystkie jej dane z telefonu. Dane spraw na serwerze kontroluje jego właściciel.</p>
+
+<h2>Kontakt</h2>
+<p>JI ENGINEERING, <a href="mailto:engineering@iwanus.eu">engineering@iwanus.eu</a></p>
+</body>
+</html>
